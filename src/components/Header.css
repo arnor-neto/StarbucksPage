@@ -1,0 +1,43 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #006241;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 10vh;
+}
+
+h1 {
+  color: white;
+  font-size: 1.7em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 26%;
+  justify-content: space-between;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+li:hover:after {
+  width: 100%;
+}
